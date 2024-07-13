@@ -6,4 +6,4 @@ This project involves an e-puck robot equipped with distance sensors used to det
 
 
 <h3> Note </h3>
-To make the line appear, download tinker.obj file and then go to Transform --> children --> shape --> geometry Mesh --> url and click on select button to upload the file on the world
+To make the line appear, download (tinker.obj) file and then go to Transform --> children --> shape --> geometry Mesh --> url and click on select button to upload the file on the world
