@@ -45,5 +45,3 @@ def run_robot(robot):
 if __name__ == "__main__":
     my_robot = Robot()
     run_robot(my_robot) 
-    
-    #irl left  irR right
