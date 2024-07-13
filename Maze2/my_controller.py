@@ -61,7 +61,7 @@ def plot_maze(maze, path=None, explored=None):
     plt.plot(goal[1], goal[0], 'ro')  # Goal in red
     plt.pause(0.1)
 
-
+# A* searching algo
 def a_star_search(maze, start, goal):
     neighbors = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
     close_set = set()
