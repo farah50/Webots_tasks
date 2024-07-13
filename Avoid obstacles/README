@@ -1,0 +1,2 @@
+This project involves a 4-wheel robot equipped with two distance sensors designed to avoid obstacles 
+The robot uses a basic controller to read sensor inputs and adjust motor speeds to navigate around obstacles.
