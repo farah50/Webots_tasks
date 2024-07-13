@@ -21,4 +21,5 @@ This project implements the A* searching algorithm for maze solving by a robot. 
   <li>Visualization: Real-time visualization of pathfinding and explored nodes.</li>
 </ul>
 
+![Screenshot 2024-07-14 002831](https://github.com/user-attachments/assets/52bbba82-c109-4b5e-87fc-cb27ae61672d)
 
