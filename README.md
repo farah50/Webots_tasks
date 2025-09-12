@@ -23,5 +23,8 @@ This project implements the A* searching algorithm for maze solving by a robot. 
 
 ![Screenshot 2024-07-14 002831](https://github.com/user-attachments/assets/52bbba82-c109-4b5e-87fc-cb27ae61672d)
 
-<h2>3. Arm Robot </h2>
+<h2>4. Arm Robot </h2>
+This project presents a Webots robotic arm simulation that detects, picks up, and places bottles into crates, demonstrating practical applications of Forward and Inverse Kinematics for object manipulation
+
+https://github.com/user-attachments/assets/e377f175-17a5-4ba0-8424-44ae2b9596f9
 
