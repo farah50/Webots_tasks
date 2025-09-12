@@ -11,9 +11,9 @@ This makes the project not only a practical simulation but also a direct applica
 ### Demo Screenshot  
 
 Below is an example of the arm robot environment in Webots:  
- <img width="1019" height="642" alt="Screenshot 2025-01-26 231323" src="https://github.com/user-attachments/assets/44a5a63c-7cf6-4022-816a-27853b108102" />
- ![Uploading Screenshot 2025-01-26 231226.png…]()
+<img width="1021" height="662" alt="Screenshot 2025-01-26 231226" src="https://github.com/user-attachments/assets/70442fb7-82a2-4250-838c-8a16175cc02a" />
 
+<img width="1019" height="642" alt="Screenshot 2025-01-26 231323" src="https://github.com/user-attachments/assets/f6dcb63b-ca4a-4ba0-afaf-8e445d8ecdbb" />
 
 
 ### How to Run  
