@@ -1,0 +1,226 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/GalvanizedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/CorrugatedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/devices/robotiq/protos/Robotiq3fGripper.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/universal_robots/protos/UR5e.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/PlasticCrate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/manhole/protos/SquareManhole.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/drinks/protos/WaterBottle.proto"
+
+WorldInfo {
+  info [
+    "Universal Robot UR3e, UR5e and UR10e grasping cans using Robotiq 3F grippers."
+  ]
+  title "Universal Robot"
+  basicTimeStep 8
+  physicsDisableAngularThreshold 0.1
+  contactProperties [
+    ContactProperties {
+      bounce 0.1
+    }
+    ContactProperties {
+      material1 "slope"
+      coulombFriction [
+        0.5
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.012763846296474634 -0.9988070979125401 -0.047132423948379645 5.775564331418843
+  position -4.9391288688469945 -0.6636845787815431 3.658896800249571
+  exposure 1.7
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+SolidBox {
+  translation -0.135 -0.0323 0.675
+  size 1.4 0.4 1.22
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 4.885 -1.8623 0.675
+  name "box(1)"
+  size 1.4 0.4 1.22
+  appearance GalvanizedMetal {
+  }
+}
+UR5e {
+  translation -3.69388e-08 -4.01997e-08 1.29
+  rotation 5.67193e-08 2.39745e-09 -1 1.5708
+  controller "k_controller"
+  selfCollision FALSE
+  toolSlot [
+    Robotiq3fGripper {
+    }
+    DistanceSensor {
+      translation 0 0.1 0
+      rotation 0 0 1 1.570796
+    }
+  ]
+}
+UR5e {
+  translation 4.87999 -1.92 1.29
+  rotation 2.39746e-09 -5.67195e-08 1 1.57079
+  name "UR5e(1)"
+  controller "k_controller"
+  selfCollision FALSE
+  toolSlot [
+    Robotiq3fGripper {
+    }
+    DistanceSensor {
+      translation 0 0.1 0
+      rotation 0 0 1 1.570796
+    }
+  ]
+}
+ConveyorBelt {
+  translation 2.54 -0.82 0
+  rotation 0 0 1 3.141592
+  size 8 0.2 1.25
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 0.2
+}
+ConveyorBelt {
+  translation 2.54 -1.09 0.1
+  rotation 0 0 1 3.141592
+  name "conveyor belt(3)"
+  size 7.97 0.2 1.18
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed -0.2
+}
+ConveyorBelt {
+  translation 0 0.71 0
+  rotation 0 1 0 0
+  name "conveyor belt(1)"
+  size 13 0.6 0.75
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 0
+  acceleration 0
+}
+ConveyorBelt {
+  translation 0.1 -2.6 0.11
+  rotation 0 1 0 0
+  name "conveyor belt(2)"
+  size 13 0.6 0.75
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 0
+  acceleration 0
+}
+PlasticCrate {
+  translation 0.13288740644024596 0.7582922984616519 0.7497568293783636
+  rotation 0.10361535705232854 0.04142035419446157 0.9937546035321416 0.0010889987127083718
+  name "plastic crate(1)"
+  size 0.6 0.45 0.4
+  color 1 0.7 0
+  mass 1
+}
+PlasticCrate {
+  translation 0.9131594069702578 0.7736353046733525 0.7498575021903193
+  rotation -0.00840962673606046 0.03883932342725354 0.9992100805805922 0.00012887705020838645
+  name "plastic crate(3)"
+  size 0.6 0.45 0.4
+  color 1 0.7 0
+  mass 1
+}
+PlasticCrate {
+  translation 4.75361 -2.54587 0.85965
+  rotation -0.003745296114591192 0.3521346766311914 0.9359418476972061 0.00013758893899679792
+  name "plastic crate(4)"
+  size 0.6 0.45 0.29
+  color 0.3 0.7 0
+  mass 1
+}
+PlasticCrate {
+  translation 4.10361 -2.57587 0.859656
+  rotation -0.003745296114591192 0.3521346766311914 0.9359418476972061 0.00013758893899679792
+  name "plastic crate(5)"
+  size 0.6 0.45 0.29
+  color 0.3 0.7 0
+  mass 1
+}
+PlasticCrate {
+  translation 3.41361 -2.57593 0.859679
+  rotation -0.003745296114591192 0.3521346766311914 0.9359418476972061 0.00013758893899679792
+  name "plastic crate(6)"
+  size 0.6 0.45 0.29
+  color 0.3 0.7 0
+  mass 1
+}
+WaterBottle {
+  translation 3.6040038235691916 -1.1100001102254489 1.2779442386582416
+  rotation 0.0008312330642462388 0.999999654513907 -4.864071829340944e-06 0.0006221010759390993
+}
+WaterBottle {
+  translation 2.324003830429213 -1.1100001102548873 1.2779445602196948
+  rotation 0.0007033439505956036 0.9999997526503738 -2.5452374999135695e-06 0.000621922701645396
+  name "water bottle(1)"
+}
+WaterBottle {
+  translation 1.2340038364224044 -1.1100001103349084 1.2779448343611857
+  rotation 0.0005517752649312594 0.9999998477718102 -6.431976736663847e-07 0.00062175288988187
+  name "water bottle(2)"
+}
+PlasticCrate {
+  translation -0.5868375929930872 0.7434423046818378 0.7498650416881854
+  rotation -0.008409626742230364 0.038839323465173936 0.9992100805790662 0.00012887705008268066
+  name "plastic crate(2)"
+  size 0.6 0.45 0.4
+  color 1 0.7 0
+  mass 1
+}
+RubberDuck {
+  translation 1.4464671012515917 -0.820336492328459 1.2802558682046472
+  rotation 0.09425306930817179 -0.7534033706446169 0.650768561031738 0.0003270997685435512
+  name "rubber duck(3)"
+  scale 1.5
+}
+RubberDuck {
+  translation 2.82613529664781 -0.8200427000738097 1.2806109357140907
+  rotation 0.09268543811343813 -0.7535194253625463 0.6508593436089076 0.000327051035657398
+  name "rubber duck(4)"
+  scale 1.5
+}
+RubberDuck {
+  translation 3.85614 -0.819828 1.2808
+  rotation 0.09268543811343813 -0.7535194253625463 0.6508593436089076 0.000327051035657398
+  name "rubber duck(2)"
+  scale 1.5
+}
+RectangleArena {
+  floorSize 20 20
+  wallHeight 1.4
+}
+SquareManhole {
+  size 11 16 0.1
+}
