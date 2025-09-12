@@ -1,35 +1,23 @@
+# Arm Robot Simulation  
 
----
+This project demonstrates a robotic arm simulation built in Webots, where the arm is tasked with detecting, picking up, and placing bottles into crates.  
 
-### ✅ الحل 2: لو عايز HTML (لكن لازم تكتب الصورة كـ HTML كمان)
-```html
-<h1>Arm Robot Simulation</h1>
-<p>
-This project demonstrates a robotic arm simulation built in Webots, where the arm is tasked with detecting, picking up, and placing bottles into crates.
-</p>
+The project applies **Forward Kinematics (FK)** and **Inverse Kinematics (IK)** concepts:  
+- **Forward Kinematics (FK):** Calculating the position and orientation of the robot’s end-effector from given joint parameters.  
+- **Inverse Kinematics (IK):** Determining the required joint angles to reach a specific target position for object manipulation.  
 
-<p>
-The project applies <b>Forward Kinematics (FK)</b> and <b>Inverse Kinematics (IK)</b> concepts:
-<ul>
-  <li><b>Forward Kinematics (FK):</b> Calculating the position and orientation of the robot’s end-effector from given joint parameters.</li>
-  <li><b>Inverse Kinematics (IK):</b> Determining the required joint angles to reach a specific target position for object manipulation.</li>
-</ul>
-</p>
+This makes the project not only a practical simulation but also a direct application of fundamental robotics and kinematics principles.  
 
-<h3>Demo Screenshot</h3>
-<p>Below is an example of the arm robot environment in Webots:</p>
+### Demo Screenshot  
 
-<img src="https://github.com/user-attachments/assets/ddf58f43-5572-4017-8b8c-7a208b334aea" alt="Screenshot 2024-07-13 222813" width="600"/>
+Below is an example of the arm robot environment in Webots:  
+![Screenshot 2024-07-13 222813](https://github.com/user-attachments/assets/ddf58f43-5572-4017-8b8c-7a208b334aea)  
 
-<h3>How to Run</h3>
-<ol>
-  <li>Install Webots: <a href="https://cyberbotics.com/#download">Download here</a></li>
-  <li>Clone this repository:
-    <pre><code>
-    git clone https://github.com/farah50/Webots_tasks.git
-    cd Webots_tasks/Arm\ Robot
-    </code></pre>
-  </li>
-  <li>Open <code>ArmRobot.wbt</code> in Webots.</li>
-  <li>Run the simulation to see the robotic arm perform pick-and-place tasks.</li>
-</ol>
+### How to Run  
+
+1. Install Webots: [Download here](https://cyberbotics.com/#download)  
+2. Clone this repository:  
+
+   ```bash
+   git clone https://github.com/farah50/Webots_tasks.git
+   cd Webots_tasks/Arm\ Robot
